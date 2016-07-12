@@ -3,6 +3,7 @@
  * To Compile : gcc -o trie trie.c triedriver.c
  * To run: ./trie
  */
+ 
 #include <stdio.h>
 #include <stdlib.h>
 #include "trie.h"

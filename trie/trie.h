@@ -1,5 +1,6 @@
 typedef int trieVal_t;
  
+ 
 typedef struct trieNode {
     char key;
     trieVal_t value;
