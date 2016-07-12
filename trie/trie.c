@@ -3,6 +3,7 @@
 #include "trie.h"
 #include <stdlib.h>
 
+
 trieNode_t *TrieCreateNode(char key, int data);
 
 void TrieCreate(trieNode_t **root)
