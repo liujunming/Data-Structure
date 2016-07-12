@@ -8,7 +8,7 @@ Trie树，即字典树，又称单词查找树或键树，是一种树形结构�
 1. 创建trie树 `trieNode_t *root = NULL;` && `TrieCreate(&root);`
 1. 往trie树中插入键值对（这里键为字符串，值为整数） `TrieAdd(&root, "andrew", 1);`
 1. 从trie树中删除键（即字符串）`TrieRemove(&root, "tim");`
-1. 根据健查询对应的值 `trieNode_t* ret = NULL;` `ret = TrieSearch(root->children, "andrew");`
+1. 根据健查询对应的值 `trieNode_t* ret = NULL;`&& `ret = TrieSearch(root->children, "andrew");`
 1. 销毁Trie树`TrieDestroy(root);`
 
 #### 编译与允许

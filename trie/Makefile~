@@ -1,3 +1,0 @@
-all:trie
-
-trie: trie.c triedriver.c
