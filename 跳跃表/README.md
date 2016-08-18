@@ -1,4 +1,4 @@
-跳跃表的概念、实现与应用
+## 跳跃表的概念、实现与应用
 
 ### 概念
 跳跃表（skiplist）是一种随机化的数据，跳跃表以有序的方式在层次化的链表中保存元素，效率和平衡树媲美——查找、删除、添加等操作都可以在对数期望时间下完成，并且比起平衡树来说，跳跃表的实现要简单直观得多。
@@ -41,6 +41,7 @@
 
 ---
 参考资料:
+
 1. [网易公开课 算法导论 跳跃表](http://open.163.com/movie/2010/12/7/S/M6UTT5U0I_M6V2TTJ7S.html)
 
 1. [redisbook](http://redisbook.readthedocs.io/en/latest/internal-datastruct/skiplist.html)
