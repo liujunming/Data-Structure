@@ -27,16 +27,22 @@
 ### 跳跃表的应用
 在Lucene、Redis中，运用到了跳跃表数据结构。
 跳跃表的效率与红黑树等结构差不多，那为什么还需要用到跳跃表么？下面将给出答案。
-1 skiplist的复杂度和红黑树一样，而且实现起来更简单。
-2 在并发环境下skiplist有另外一个优势，红黑树在插入和删除的时候可能需要做一些rebalance的操作，这样的操作可能会涉及到整个树的其他部分，而skiplist的操作显然更加局部性一些，锁需要盯住的节点更少，因此在这样的情况下性能好一些。
+
+1. skiplist的复杂度和红黑树一样，而且实现起来更简单。
+
+1. 在并发环境下skiplist有另外一个优势，红黑树在插入和删除的时候可能需要做一些rebalance的操作，这样的操作可能会涉及到整个树的其他部分，而skiplist的操作显然更加局部性一些，锁需要盯住的节点更少，因此在这样的情况下性能好一些。
+
 具体可以参考Herb Sutter写的Choose [Concurrency-Friendly Data Structures](http://www.drdobbs.com/parallel/choose-concurrency-friendly-data-structu/208801371).
+
 另外这篇论文里有更详细的说明和对比，page50~53：
-http://www.cl.cam.ac.uk/research/srg/netos/papers/2007-cpwl.pdf
+[cl.cam.ac.uk/research/s](http://www.cl.cam.ac.uk/research/srg/netos/papers/2007-cpwl.pdf)
 
 
 
 ---
 参考资料:
 1. [网易公开课 算法导论 跳跃表](http://open.163.com/movie/2010/12/7/S/M6UTT5U0I_M6V2TTJ7S.html)
+
 1. [redisbook](http://redisbook.readthedocs.io/en/latest/internal-datastruct/skiplist.html)
+
 1. [知乎](https://www.zhihu.com/question/20202931/answer/16086538)
